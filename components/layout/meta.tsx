@@ -3,8 +3,8 @@ import Head from "next/head";
 const DOMAIN = "https://slacker.run";
 
 export default function Meta({
-  title = "Saheli - Your Personal Safety Companion",
-  description = "Saheli is a personal safety companion that helps you stay safe and connected with your loved ones.",
+  title = "Virtual Customer Service - Your Satisfaction, Our Priority.",
+  description = "Virtual Customer Service is a web-based application designed to streamline customer support ",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;
