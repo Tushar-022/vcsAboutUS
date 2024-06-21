@@ -1,11 +1,9 @@
 import Head from "next/head";
 
-const DOMAIN = "https://slacker.run";
-
 export default function Meta({
   title = "Virtual Customer Service - Your Satisfaction, Our Priority.",
-  description = "Virtual Customer Service is a web-based application designed to streamline customer support ",
-  image = `${DOMAIN}/api/og`,
+  description = "Virtual Customer Service is a web-based application designed to streamline customer support.",
+  image = "/logo.svg",
 }: {
   title?: string;
   description?: string;
@@ -16,11 +14,11 @@ export default function Meta({
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
-
+      
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta itemProp="image" content={image} />
-      <meta property="og:logo" content={`${DOMAIN}/logo.png`}></meta>
+      <meta property="og:logo" content={image} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
